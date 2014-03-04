@@ -1,0 +1,16 @@
+/* Apply on the following .slim:
+-for i in 1..100
+ #{i}
+*/
+
+c=content
+f=font-size
+div:nth-child
+ &(3n),&(5n)
+  {f}0
+ &(3n):before
+  {c}'Fizz'
+  {f}1rem
+ &(5n):after
+  {c}'Buzz'
+  {f}1rem

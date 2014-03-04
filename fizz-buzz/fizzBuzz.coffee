@@ -1,0 +1,1 @@
+console.log ['Fizz' unless i%3]+['Buzz' unless i%5] or i for i in [1..100]
